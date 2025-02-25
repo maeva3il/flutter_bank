@@ -4,6 +4,8 @@ import 'package:flutter_application_1/providers/user_provider.dart';
 import 'package:flutter_application_1/screens/main_screen.dart'; // ✅ Ajoute l'import correct
 
 class MyApp extends StatefulWidget {
+  const MyApp({super.key});
+
   @override
   State<MyApp> createState() => _MyAppState();
 }

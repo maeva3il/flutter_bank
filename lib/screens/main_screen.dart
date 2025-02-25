@@ -14,10 +14,10 @@ class MainScreen extends StatefulWidget {
 class _MainScreenState extends State<MainScreen> {
   int _selectedIndex = 0;
   static final List<Widget> _screens = [
-    HomeScreen(), // Suppression de `const`
-    ManageScreen(), // Suppression de `const`
-    WeatherScreen(), // Suppression de `const`
-    AccountScreen(), // Suppression de `const`
+    HomeScreen(),
+    ManageScreen(),
+    WeatherScreen(),
+    AccountScreen(),
   ];
 
   void _onItemTapped(int index) {
@@ -39,6 +39,8 @@ class _MainScreenState extends State<MainScreen> {
         ],
         currentIndex: _selectedIndex,
         onTap: _onItemTapped,
+        selectedItemColor: Colors.black, // Icône sélectionnée en noir
+        unselectedItemColor: Colors.black, // Icônes non sélectionnées en noir
       ),
     );
   }
